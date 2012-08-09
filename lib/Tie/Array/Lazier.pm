@@ -1,7 +1,7 @@
 package Tie::Array::Lazier;
 use warnings;
 use strict;
-our $VERSION = sprintf "%d.%02d", q$Revision: 0.1 $ =~ /(\d+)/g;
+our $VERSION = sprintf "%d.%02d", q$Revision: 0.2 $ =~ /(\d+)/g;
 use base 'Tie::Array::Lazy';
 
 sub EXTEND($$) { } # does nothing
@@ -9,7 +9,7 @@ sub EXTEND($$) { } # does nothing
 sub FETCH($$) {
     my ( $self, $index ) = @_;
     $self->array->[$index] = $self->maker->($self, $index)
-	unless defined $self->array->[$index];
+	unless exists $self->array->[$index];
     $self->array->[$index];
 }
 
@@ -27,7 +27,7 @@ Tie::Array::Lazier - Lazier than Tie::Array::Lazy
 
 =head1 VERSION
 
-$Id: Lazier.pm,v 0.1 2007/05/26 17:54:19 dankogai Exp dankogai $
+$Id: Lazier.pm,v 0.2 2012/08/09 19:07:27 dankogai Exp $
 
 =cut
 

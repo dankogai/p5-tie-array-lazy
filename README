@@ -2,7 +2,7 @@ NAME
     Tie::Array::Lazy - Lazy -- but mutable -- arrays.
 
 VERSION
-    $Id: README,v 0.1 2007/05/26 17:55:24 dankogai Exp dankogai $
+    $Id: README,v 0.1 2007/05/26 17:55:24 dankogai Exp $
 
 SYNOPSIS
       use Tie::Array::Lazy;

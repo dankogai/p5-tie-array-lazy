@@ -1,7 +1,7 @@
 package Tie::Array::Lazy;
 use warnings;
 use strict;
-our $VERSION = sprintf "%d.%02d", q$Revision: 0.1 $ =~ /(\d+)/g;
+our $VERSION = sprintf "%d.%02d", q$Revision: 0.2 $ =~ /(\d+)/g;
 
 sub DESTROY { }
 
@@ -73,7 +73,7 @@ Tie::Array::Lazy - Lazy -- but mutable -- arrays.
 
 =head1 VERSION
 
-$Id: Lazy.pm,v 0.1 2007/05/26 17:54:19 dankogai Exp dankogai $
+$Id: Lazy.pm,v 0.2 2012/08/09 19:13:00 dankogai Exp dankogai $
 
 =cut
 
@@ -136,7 +136,7 @@ generated or assigned.
 
   # Fibonacci array
   tie my @a, 'Tie::Array::Lazy', 
-      [1, 1], 
+      [0, 1], 
       sub{ $_[0]->array->[-2] + $_[0]->array->[-1] }
 
 =item index
@@ -209,7 +209,7 @@ Matsumoto Yukihiro (Matz) for teasing me into hacking this module.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dan Kogai, all rights reserved.
+Copyright 2007-2012 Dan Kogai, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

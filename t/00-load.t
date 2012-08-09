@@ -1,6 +1,6 @@
 #!perl -T
 #
-# $Id: 00-load.t,v 0.1 2007/05/26 17:54:19 dankogai Exp dankogai $
+# $Id: 00-load.t,v 0.1 2007/05/26 17:54:19 dankogai Exp $
 #
 use strict;
 use warnings;

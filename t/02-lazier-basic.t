@@ -1,6 +1,6 @@
 #!perl -T
 #
-# $Id: 02-lazier-basic.t,v 0.1 2007/05/26 17:54:19 dankogai Exp dankogai $
+# $Id: 02-lazier-basic.t,v 0.1 2007/05/26 17:54:19 dankogai Exp $
 #
 use strict;
 use warnings;
