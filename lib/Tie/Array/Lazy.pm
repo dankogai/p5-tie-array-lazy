@@ -136,7 +136,7 @@ generated or assigned.
 
   # Fibonacci array
   tie my @a, 'Tie::Array::Lazy', 
-      [0, 1], 
+      [0, 1],
       sub{ $_[0]->array->[-2] + $_[0]->array->[-1] }
 
 =item index
@@ -163,7 +163,7 @@ L<Tie::Array::Lazier> for details.
 
 =head1 AUTHOR
 
-Dan Kogai, C<< <dankogai at dan.co.jp> >>
+Dan Kogai, C<< <dankogai at cpan.org> >>
 
 =head1 BUGS
 
@@ -209,7 +209,7 @@ Matsumoto Yukihiro (Matz) for teasing me into hacking this module.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007-2012 Dan Kogai, all rights reserved.
+Copyright 2007-2020 Dan Kogai, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
