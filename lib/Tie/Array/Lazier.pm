@@ -71,7 +71,7 @@ internal array holds.
 
 =head1 AUTHOR
 
-Dan Kogai, C<< <dankogai at dan.co.jp> >>
+Dan Kogai, C<< <dankogai at cpan.org> >>
 
 =head1 BUGS
 
@@ -87,7 +87,7 @@ See L<Tie::Array::Lazy>.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Dan Kogai, all rights reserved.
+Copyright 2007-2020 Dan Kogai, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
